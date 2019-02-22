@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jared Milos</title>
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper" id="top">
+            <div class="container-fluid">
+                <div class="row" id="bannerspan">
+                   <div class="col-lg" id="banner">
+                        <div id="mobileMenuIcon">
+                            <div class="whiteLine"></div>
+                            <div class="whiteLine"></div>
+                            <div class="whiteLine"></div>
+                        </div> 
+                        <div id="navbar">
+                            <a href="#top">
+                                <div class="navbutton">Home</div>
+                            </a>
+                            <a href="#aboutMeAnchor">
+                                <div class="navbutton">About Me</div>
+                            </a>
+                            <a href="#portfolio">
+                                <div class="navbutton">Portfolio</div>
+                            </a>
+                            <a href="#contactme">
+                                <div class="navbutton">Contact Me</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="mobileMenu">
+                        <a href="#top">
+                            <div class="mobileMenuButton">Home</div>
+                        </a>
+                        <a href="#aboutMeAnchor">
+                            <div class="mobileMenuButton">About Me</div>
+                        </a>
+                        <a href="#portfolio">
+                            <div class="mobileMenuButton">Portfolio</div>
+                        </a>
+                        <a href="#contactme">
+                            <div class="mobileMenuButton">Contact Me</div>
+                        </a>
+                    </div>
+                    <div class="titleImage">
+                        <span class="titleImage">
+                            <span id="image-inner"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" id="aboutMeAnchor"></div>
+                <div class="row" id="aboutme">
+                    <h1>About Me</h1>
+                    <div id="jaredPhoto" class="col-sm-5">
+                        <img src="{{ url_for('static', filename='img/bioImage.jpg') }}" id="photo">
+                        <h5>Jared Milos</h5>
+                    </div>
+                    <div id="jaredBio" class="col-sm-5">
+                        <p>I had been managing an eCommerce customer service team & running the company's "Voice of the Customer" program, working directly with the site's developers and data engineers.  I realized that I could read and edit the SQL queries, and some of the HTML.  I decided that instead of just reporting customer issues, I wanted to be able to build solutions for them directly.</p>
+                        <p>My coding journey began with an intense 4-month bootcamp at <a href="http://www.codingdojo.com" target="none">The Coding Dojo</a> in San Jose, CA, learning three full stacks, dozens of additional frameworks and technologies, common algorithms and data structures.  Having built multiple apps and sites by myself and within a team structure, I'm excited to continue to strengthen my skills in a business environment.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg" id="languages">
+                        <h2>Languages, Technologies, Tools, & Concepts</h2>
+                        <p>HTML5 | CSS3 | Javascript (ES5, ES6) | jQuery | Ajax | Bootstrap</p>
+                        <p>MongoDB | ExpressJS | Angular 4/5 | NodeJS | SocketiO | Mongoose | Typescript</p>
+                        <p>Python | Flask | Django | MySQL</p>
+                        <p>iOS/Swift 4 | Core Data | Core Motion | Core Location</p>
+                        <p>AWS EC2 | GitHub | VSCode | Xcode 10 | MySQL Workbench | Postman</p>
+                        <p>MVC | OOP | CRUD Ops | RESTful Architecture</p>
+                    </div>
+                </div>
+                <div class="row" id="portfolio">
+                    <h1>Portfolio</h1>
+                    <h5>Click images to launch</h5>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 portfolioBox" id="mathapp">
+                        <a href="http://13.58.61.159" target="_blank">
+                            <div class="floatBox">
+                                <img src="{{ url_for('static', filename='img/mathapp.png') }}" class="portfolioImage">
+                                <div class="portfolioTitle">
+                                    <h6>Math Fact Game</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <p><b>Description:</b> An elementary-level math fact practice game.  Choose addition, subtraction, multiplication, or division.  Play a round of 10 problems, then see your score, as well as the correct answer and your given answer to each problem.</p>
+                        <p><b>Technologies used:</b> Python • Django • HTML • CSS • Bootstrap • jQuery • bcrypt • AWS</p>
+                    </div>
+                    <div class="col-md-4 portfolioBox" id="collabolab">
+                        <a href="http://18.222.110.209" target="_blank">
+                            <div class="floatBox">
+                                <img src="{{ url_for('static', filename='img/collabolab.png') }}" class="portfolioImage">
+                                <div class="portfolioTitle">
+                                    <h6>Musical Chat Room</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <p><b>Description:</b> A chat room using socket technology to not only chat via text, but also play music together via a socket-ized synth keyboard.  If playing alone, open this website in two different windows to see/hear the synth play and light up in the other window.</p>
+                        <p><b>Technologies used:</b> Javascript • Node • Socket.io • HTML • CSS • jQuery • AWS</p>
+                    </div>
+                    <div class="col-md-4 portfolioBox" id="thisPortfolio">
+                        <div class="floatBox">
+                            <img src="{{ url_for('static', filename='img/background_image1.jpg') }}" class="portfolioImage">
+                            <div class="portfolioTitle">
+                                <h6>This Portfolio Site</h6>
+                            </div>
+                        </div>
+                        <p><b>Description:</b> This very portfolio site that you are currently viewing.</p>
+                        <p><b>Technologies used:</b> HTML • CSS • Bootstrap • jQuery • Flask • Responsive Design • Photoshop • AWS</p>
+                    </div>
+                </div>
+                <div class="row" id="contactme">
+                    <div class="col-14">
+                        <h1>Contact Me</h1>
+                        <div id="contactInfo">
+                            <div>
+                                <div>
+                                    <a href="mailto:jaredmilosmusic@gmail.com">
+                                        <img class="icon" src="{{ url_for('static', filename='img/emailIcon.png') }}" />
+                                        <p class="inline">jaredmilosmusic at gmail dot com</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="tel:1-650-804-2216">
+                                        <img class="icon" src="{{ url_for('static', filename='img/phoneIcon.png') }}" />
+                                        <p class="inline">1-650-804-2216 (Text or call)</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/jaredmilos/">
+                                        <img class="icon" src="{{ url_for('static', filename='img/linkedInIcon.png') }}" />
+                                        <p class="inline">LinkedIn</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.github.com/jaredmilos/">
+                                        <img class="icon" src="{{ url_for('static', filename='img/gitHubIcon.png') }}" />
+                                        <p class="inline">GitHub</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="footer">
+                    <div class="col-lg">
+                        <p id="copyright">Copyright ©2019 - Jared Milos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#mobileMenuIcon").click(function(){
+                $("#mobileMenu").toggle();
+            }); 
+            $("a").click(function(){
+                $("#mobileMenu").hide();
+            }); 
+        });
+    </script>
+</html>
